@@ -194,12 +194,3 @@ def test_operation():
     print(q1.reverse())
 
 
-
-if __name__ == '__main__':
-    #test_arithmetic()
-    #test_comprasion()
-    #test_operation()
-
-    q = Quaternion(1, 2, 3, 4)
-    print(q * 5, 5 * q)
-
