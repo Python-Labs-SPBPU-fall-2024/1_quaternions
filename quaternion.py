@@ -143,3 +143,11 @@ class Quaternion:
                 return result
             else:
                 return self.inverse() ** (-power)
+
+
+    def rotate_vector(self, vector):
+        """Поворот вектора через кватернион"""
+        vec_quat = Quaternion(0, vector[0], vector[1], vector[2])
+        rotated_vec_quat = self * vec_quat * self.mate()
+        rotate_vec = (rotated_vec_quat.i, rotated_vec_quat.j, rotated_vec_quat.k)
+        return rotate_vec

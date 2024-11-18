@@ -1,10 +1,38 @@
-import quaternion as qtr
-
-def main():
-    qtr.test_arithmetic()
-    qtr.test_comprasion()
-    qtr.test_operation()
-
-
-if __name__ == '__main__':
-    main()
+from ariphmetic_tests import *
+if __name__ == "__main__":
+    test_add_simple()
+    test_add_zero()
+    test_add_negative()
+    test_radd_simple()
+    test_add_invalid_input()
+    test_add_immutability()
+    test_add_int()
+    test_radd_int()
+    test_sub_simple()
+    test_rsub_simple()
+    test_sub_scalar()
+    test_rsub_scalar()
+    test_sub_zero()
+    test_rsub_zero()
+    test_sub_self()
+    test_rsub_self()
+    test_mul_quaternions()
+    test_rmul_quaternions()
+    test_mul_scalar()
+    test_rmul_scalar()
+    test_inverse()
+    test_inverse_zero_norm()
+    test_truediv()
+    test_rtruediv()
+    test_truediv_self()
+    test_truediv_one()
+    test_rtruediv_one()
+    test_truediv_zero_quaternion()
+    test_rtruediv_zero_quaternion()
+    test_pow_zero()
+    test_pow_one()
+    test_pow_positive()
+    test_pow_negative()
+    test_pow_non_integer()
+    test_rotate_vector()
+    print("Все тесты пройдены!")
